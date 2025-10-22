@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Support - HeyWords</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: #fff;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            margin-bottom: 10px;
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+
+        .update-date {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .content {
+            padding-bottom: 60px;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 40px 0 20px;
+            color: #1a1a1a;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: #444;
+        }
+
+        ul {
+            margin: 16px 0;
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 12px;
+            color: #444;
+        }
+
+        strong {
+            color: #1a1a1a;
+            font-weight: 600;
+        }
+
+        .contact {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+
+        .faq-item {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+            border-left: 4px solid #007AFF;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+        }
+
+        .faq-answer {
+            color: #444;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            color: #1a1a1a;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+
+        .back-link:hover {
+            opacity: 0.7;
+        }
+
+        .support-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .support-method {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .support-method:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .support-method h3 {
+            color: #007AFF;
+            margin-bottom: 10px;
+        }
+
+        .support-method p {
+            margin-bottom: 15px;
+        }
+
+        .support-method a {
+            color: #007AFF;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .support-method a:hover {
+            text-decoration: underline;
+        }
+
+        .language-switcher {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .lang-btn {
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid #ddd;
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: var(--text-primary);
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .lang-btn:hover {
+            background: var(--text-primary);
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            .support-methods {
+                grid-template-columns: 1fr;
+            }
+
+            .language-switcher {
+                top: 15px;
+                right: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <a href="support.html" class="lang-btn">中文</a>
+    </div>
+
+    <div class="header">
+        <div class="logo">
+            <img src="images/logo-name@800.png" alt="HeyWords">
+        </div>
+        <h1>Technical Support</h1>
+        <p class="update-date">We're here to help you anytime</p>
+    </div>
+
+    <div class="content">
+        <p>Thank you for using HeyWords! If you encounter any issues during use, or have any suggestions and feedback, we're happy to help you.</p>
+
+        <h2>Contact Us</h2>
+        <div class="support-methods">
+            <div class="support-method">
+                <h3>📧 Email Support</h3>
+                <p>Send an email to our technical support team</p>
+                <a href="mailto:support@heywords.app">support@heywords.app</a>
+            </div>
+            <div class="support-method">
+                <h3>⭐ App Store Reviews</h3>
+                <p>Share your experience and feedback on the App Store</p>
+                <p>Your reviews are important to us</p>
+            </div>
+        </div>
+
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="faq-item">
+            <div class="faq-question">Q: Photo recognition feature not working?</div>
+            <div class="faq-answer">
+                A: Please ensure:<br>
+                • Camera permissions are enabled<br>
+                • Network connection is stable<br>
+                • Photos are clear with good lighting<br>
+                • App is updated to the latest version
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: How to cancel Pro subscription?</div>
+            <div class="faq-answer">
+                A: Subscription management is handled by Apple:<br>
+                • Open iPhone Settings<br>
+                • Tap your Apple ID<br>
+                • Select "Subscriptions"<br>
+                • Find HeyWords and cancel subscription
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: Translation results are inaccurate?</div>
+            <div class="faq-answer">
+                A: Translation accuracy is affected by:<br>
+                • Photo clarity and lighting conditions<br>
+                • Background complexity<br><br>
+                We recommend shooting in well-lit environments to ensure objects are clearly visible.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q: App crashes or freezes?</div>
+            <div class="faq-answer">
+                A: Please try the following solutions:<br>
+                • Restart the app<br>
+                • Restart your device<br>
+                • Check device storage space<br>
+                • Update to the latest version<br>
+                • If the problem persists, contact technical support
+            </div>
+        </div>
+
+        <h2>Feedback & Suggestions</h2>
+        <p>We highly value your feedback and suggestions! If you have:</p>
+        <ul>
+            <li>Feature improvement suggestions</li>
+            <li>New feature requests</li>
+            <li>User experience feedback</li>
+            <li>Bug reports</li>
+        </ul>
+        <p>Please let us know through the contact methods above, and we will carefully consider every suggestion.</p>
+
+        <div class="contact">
+            <h2 style="margin-top: 0;">Technical Support</h2>
+            <p style="margin-bottom: 0;">We promise to reply to your emails within 24 hours. Working hours: Monday to Friday 9:00-18:00 (Beijing Time)</p>
+            <p style="margin-bottom: 0;"><strong>Email:</strong> support@heywords.app</p>
+        </div>
+
+        <a href="index-en.html" class="back-link">← Back to Home</a>
+    </div>
+</body>
+</html>
