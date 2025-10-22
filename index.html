@@ -248,6 +248,32 @@
             opacity: 0.6;
         }
 
+        /* Language Switcher */
+        .language-switcher {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .lang-btn {
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid #ddd;
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: var(--text-primary);
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .lang-btn:hover {
+            background: var(--text-primary);
+            color: #fff;
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             .logo {
@@ -269,6 +295,11 @@
             .features-grid,
             .steps {
                 grid-template-columns: 1fr;
+            }
+
+            .language-switcher {
+                top: 15px;
+                right: 15px;
             }
         }
     </style>
